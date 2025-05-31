@@ -1,0 +1,56 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(BgTyanColc.jpg);
+      justify-content: center;
+      min-height: 97vh;
+      display: flex;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top left;
+      position: relative;
+    }
+    .calculator {
+      width: 280px;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      backdrop-filter: blur(20px);
+      color: white;
+      border-radius: 10px;
+      padding: 20px; 
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    }
+    .calculator input {
+      width: 250px;
+      padding: 15px;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      text-align: right;
+      border: 1px solid white;
+      border-radius: 10px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 5px;
+    }
+    .buttons button {
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      color: white;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .buttons button:hover {
+      background-color: darkcyan;
+    }
