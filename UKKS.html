@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/jpg" href="LogoTyanColc.jpg" />
+  <title>TyanColc</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="StyleUKKS.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="append('%')">%</button>
+      <button onclick="backspace()"><i data-feather="delete"></i></button>
+      <button onclick="setOperator('÷')">÷</button>
+
+      <button onclick="append('7')">7</button>
+      <button onclick="append('8')">8</button>
+      <button onclick="append('9')">9</button>
+      <button onclick="setOperator('×')">×</button>
+
+      <button onclick="append('4')">4</button>
+      <button onclick="append('5')">5</button>
+      <button onclick="append('6')">6</button>
+      <button onclick="setOperator('-')">−</button>
+
+      <button onclick="append('1')">1</button>
+      <button onclick="append('2')">2</button>
+      <button onclick="append('3')">3</button>
+      <button onclick="setOperator('+')">+</button>
+
+      <button onclick="append('00')">00</button>
+      <button onclick="append('0')">0</button>
+      <button onclick="append('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script src="ScriptUKKS.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+</html>
